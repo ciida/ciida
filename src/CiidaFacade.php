@@ -4,9 +4,6 @@ namespace Ciida\Ciida;
 
 use Illuminate\Support\Facades\Facade;
 
-/**
- * @see \Ciida\Ciida\Skeleton\SkeletonClass
- */
 class CiidaFacade extends Facade
 {
     /**

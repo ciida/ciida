@@ -16,11 +16,12 @@
         }
     ],
     "require": {
-        "php": "^7.4|^8.0",
-        "illuminate/support": "^8.0"
+        "php": "^8.1",
+        "illuminate/support": "^9.0|^10.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^6.0",
+        "nunomaduro/collision": "^6.4",
+        "orchestra/testbench": "^7.21",
         "phpunit/phpunit": "^9.0"
     },
     "autoload": {
@@ -34,7 +35,7 @@
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit",
+        "test": "vendor/bin/testbench package:test",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
 
     },
