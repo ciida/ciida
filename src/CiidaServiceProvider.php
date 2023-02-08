@@ -25,14 +25,14 @@ class CiidaServiceProvider extends ServiceProvider
             ], 'config');
 
             // Publishing the views.
-            /*$this->publishes([
+            $this->publishes([
                 __DIR__.'/../resources/views' => resource_path('views/vendor/ciida'),
-            ], 'views');*/
+            ], 'views');
 
             // Publishing assets.
-            /*$this->publishes([
-                __DIR__.'/../resources/assets' => public_path('vendor/ciida'),
-            ], 'assets');*/
+            $this->publishes([
+                __DIR__.'/../public' => public_path('vendor/ciida'),
+            ], 'laravel-assets');
 
             // Publishing the translation files.
             /*$this->publishes([

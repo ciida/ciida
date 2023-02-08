@@ -35,6 +35,7 @@
         }
     },
     "scripts": {
+        "laravel": "vendor/bin/testbench",
         "test": "vendor/bin/testbench package:test",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
 
