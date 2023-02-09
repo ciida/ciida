@@ -12,10 +12,5 @@ export default defineConfig({
                 ...refreshPaths,
             ],
         }),
-    ],
-    // resolve: {
-    //     alias: {
-    //         'settings': '/resources/asset/css/settings.css',
-    //     }
-    // }
+    ]
 });

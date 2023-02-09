@@ -6,13 +6,17 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Ciida</title>
 
-    @vite(['public/vendor/ciida/build/app.css', 'public/vendor/ciida/build/app.js'], config('vite.configs.default.build_path'))
-{{--    @vite(['public/vendor/ciida/app.css', 'public/vendor/ciida/app.js'])--}}
-{{--    <script src="{{ asset('c ciida/app.js') }}"></script>--}}
-{{--    <link href="{{ asset('ciida/app.css') }}" rel="stylesheet" />--}}
+    {{
+        Vite::useBuildDirectory('vendor/ciida/build')
+            ->withEntryPoints([
+                'resources/css/app.css',
+                'resources/js/app.js',
+            ])
+    }}
+
 </head>
-<body class="font-sans antialiased" x-cloak>
-    <div class="min-h-screen bg-gray-100">
+<body class="font-sans antialiased " x-cloak>
+    <div class="min-h-screen bg-gradient-to-r from-violet-500 to-fuchsia-500">
         {{ $slot }}
     </div>
 </body>
