@@ -1,5 +1,5 @@
 <x-ciida::layout>
-    <div class="relative z-10" role="dialog" aria-modal="true">
+    <div class="relative z-10" role="dialog" aria-modal="true" x-data="{}">
         <div class="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity"></div>
 
         <div class="fixed inset-0 z-10 overflow-y-auto p-4 sm:p-6 md:p-20">
