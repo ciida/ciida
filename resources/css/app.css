@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.pallete-option {
+    @apply flex cursor-default select-none items-center rounded-md px-3 py-2 hover:text-white hover:bg-gray-800
+}
+
+.pallete-option[aria-selected=true] {
+    @apply text-white bg-gray-800
+}

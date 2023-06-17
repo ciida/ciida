@@ -9,16 +9,16 @@
     {{
         Vite::useBuildDirectory('vendor/ciida/build')
             ->withEntryPoints([
-//                'resources/css/app.css',
+                'resources/css/app.css',
                 'resources/js/app.js',
             ])
     }}
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="//unpkg.com/alpinejs" defer></script>
-
 </head>
-<body class="font-sans antialiased " x-cloak>
+<body class="font-sans antialiased"
+      x-data="pallete"
+      x-cloak
+      @keyup.down.window="console.log('down')">
     <div class="min-h-screen bg-gradient-to-r from-violet-500 to-fuchsia-500">
         {{ $slot }}
     </div>
